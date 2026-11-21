@@ -1,0 +1,5 @@
+# 沙盒仓库的风险分级：在插件模板之上，src/ 下的普通代码算 T2。改它算 T4。
+version: 1
+extends: plugin
+T2:
+  - src/**

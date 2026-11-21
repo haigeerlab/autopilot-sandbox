@@ -1,0 +1,4 @@
+# autopilot 体检与本机编排读这里的检查命令（C1）。改它算 T4。
+entries:
+  check:
+    run: python3 -B -m unittest discover -s tests -v
