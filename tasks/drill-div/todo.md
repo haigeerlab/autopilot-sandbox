@@ -2,7 +2,7 @@
 
 测试命令：`python3 -B -m unittest discover -s tests -v`
 
-- [x] Task 1：`div(a, b)` 与测试
+- [ ] Task 1：`div(a, b)` 与测试
   - 验收：Spec 验收 1、2、3、4
   - 文件：`src/divide.py`、`tests/test_divide.py`
 
