@@ -1,5 +1,5 @@
 # Copy to <repo>/.github/workflows/autopilot-admission.yml in a caller repo (e.g. agent-relay).
-# Replace BOTH e7ad518c71efd4bc8bfb122c6d564a1e824d895f occurrences with the same 40-char autopilot-hub commit SHA.
+# Replace BOTH <HUB_SHA> occurrences with the same 40-char autopilot-hub commit SHA.
 # Adding or updating this file is a T4 change: the repo owner commits it, a human merges it.
 name: autopilot-admission
 
@@ -15,6 +15,6 @@ permissions:
 
 jobs:
   admission:
-    uses: haigeerlab/autopilot-hub/.github/workflows/admission.yml@e7ad518c71efd4bc8bfb122c6d564a1e824d895f
+    uses: haigeerlab/autopilot-hub/.github/workflows/admission.yml@9704e516f4fc3b7369f506ac66a50f074978e896
     with:
-      hub_ref: e7ad518c71efd4bc8bfb122c6d564a1e824d895f
+      hub_ref: 9704e516f4fc3b7369f506ac66a50f074978e896
