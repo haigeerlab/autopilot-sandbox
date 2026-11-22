@@ -35,6 +35,8 @@ class NoLocalPathsTest(unittest.TestCase):
         name = local_name()
         own = re.compile(re.escape(name), re.I) if name else None
         for rel in filter(None, files):
+            if rel == "tests/test_no_local_paths.py":
+                continue  # its own samples in test_pattern are meant to match
             path = os.path.join(ROOT, rel)
             try:
                 with open(path, encoding="utf-8") as fh:
