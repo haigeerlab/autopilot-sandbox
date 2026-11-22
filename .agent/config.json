@@ -1,5 +1,8 @@
 {
   "version": 1,
+  "takeover": {
+    "release": "auto-confirm"
+  },
   "moduleTakeover": {
     "drill-mul": "merge",
     "drill-div": "plan"
