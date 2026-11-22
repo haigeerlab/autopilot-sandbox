@@ -1,6 +1,7 @@
 {
   "version": 1,
   "moduleTakeover": {
-    "drill-mul": "merge"
+    "drill-mul": "merge",
+    "drill-div": "merge"
   }
 }
