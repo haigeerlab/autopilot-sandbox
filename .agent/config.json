@@ -2,6 +2,15 @@
   "version": 1,
   "moduleTakeover": {
     "drill-mul": "merge",
-    "drill-div": "merge"
+    "drill-div": "plan"
+  },
+  "takeoverNarrowed": {
+    "drill-div": {
+      "from": "merge",
+      "to": "plan",
+      "source": "autopilot",
+      "reason": "降级 #9：main 上撤回了 autopilot 自动合并的 PR",
+      "at": "2026-11-22T03:28:00Z"
+    }
   }
 }
