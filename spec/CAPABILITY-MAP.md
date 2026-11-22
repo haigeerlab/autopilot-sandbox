@@ -11,8 +11,9 @@
 | Module id | Responsibility | Depends on |
 |---|---|---|
 | drill-mul | 给 `src/calc.py` 加乘法函数 `mul(a, b)` 及其测试（演练 2：spec-guard 模块自动合并） | — |
+| drill-div | 新增 `src/divide.py` 的除法函数 `div(a, b)` 及其测试（演练 2 重演：配置与 Spec 分两次提交） | — |
 
-Build order: drill-mul
+Build order: drill-mul → drill-div
 
 ---
 
