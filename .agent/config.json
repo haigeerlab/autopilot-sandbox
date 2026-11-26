@@ -5,7 +5,8 @@
   },
   "moduleTakeover": {
     "drill-mul": "merge",
-    "drill-div": "plan"
+    "drill-div": "plan",
+    "drill-pow": "merge"
   },
   "takeoverNarrowed": {
     "drill-div": {
