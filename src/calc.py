@@ -11,3 +11,9 @@ def sub(a, b):
 
 def mul(a, b):
     return a * b
+
+
+def power(a, n):
+    if not isinstance(n, int) or n < 0:
+        raise ValueError("n must be a non-negative integer")
+    return a * n

@@ -20,5 +20,16 @@ class CalcTest(unittest.TestCase):
         self.assertEqual(calc.mul(-2, 3), -6)
 
 
+class PowerTest(unittest.TestCase):
+    def test_power(self):
+        self.assertEqual(calc.power(2, 10), 1024)
+        self.assertEqual(calc.power(5, 0), 1)
+        self.assertEqual(calc.power(-2, 3), -8)
+
+    def test_negative_exponent(self):
+        with self.assertRaises(ValueError):
+            calc.power(2, -1)
+
+
 if __name__ == "__main__":
     unittest.main()
