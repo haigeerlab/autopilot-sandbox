@@ -15,7 +15,7 @@ def mul(a, b):
 
 def power(a, n):
     if not isinstance(n, int) or n < 0:
-        raise ValueError("n must be a non-negative integer")
+        raise ValueError("指数必须是非负整数")
     result = 1
     for _ in range(n):
         result *= a
