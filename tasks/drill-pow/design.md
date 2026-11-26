@@ -1,5 +1,7 @@
 # 技术方案：drill-pow
 
+<!-- spec-guard: review reviewer-approved dcac062c313b -->
+
 ## 现状调研
 
 - 查了 `src/calc.py`：现有 `add`、`sub`、`mul` 三个函数，都直接返回运算结果，不做类型校验。
@@ -29,3 +31,7 @@
 
 - 直接 `return a ** n`：更短，但负指数会返回小数而不是报错，需要另加判断；连乘写法让规则和代码对应更直观。
 - 放进新文件 `src/power.py`：能避开已有文件，但本次演练要验证「碰了老逻辑必审」与「受影响的老功能」用例，所以放进 `src/calc.py`。
+
+## 外部审查意见
+
+<!-- spec-guard: design-review round=1 blocking=0 sha256=7b21bf3acdde vendor=openai same-vendor=false criteria=design-v1 report=97ae2e26accaeb481d0a3725797e1072b5ed15874e674820f31040261541384e -->
