@@ -2,7 +2,7 @@
 
 测试命令：`python3 -B -m unittest discover -s tests -v`
 
-- [ ] Task 1：`power(a, n)` 与 `PowerTest`
+- [x] Task 1：`power(a, n)` 与 `PowerTest`
   - 验证：回归用例 R1、R3
   - 文件：`src/calc.py`、`tests/test_calc.py`
 
