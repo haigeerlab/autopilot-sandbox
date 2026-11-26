@@ -12,8 +12,9 @@
 |---|---|---|
 | drill-mul | 给 `src/calc.py` 加乘法函数 `mul(a, b)` 及其测试（演练 2：spec-guard 模块自动合并） | — |
 | drill-div | 新增 `src/divide.py` 的除法函数 `div(a, b)` 及其测试（演练 2 重演：配置与 Spec 分两次提交） | — |
+| drill-pow | 给 `src/calc.py` 加整数幂函数 `power(a, n)` 及其测试（S110 S6：新流程全链路演练） | — |
 
-Build order: drill-mul → drill-div
+Build order: drill-mul → drill-div → drill-pow
 
 ---
 
