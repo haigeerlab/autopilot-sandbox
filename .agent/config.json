@@ -7,7 +7,7 @@
     "drill-mul": "merge",
     "drill-div": "plan",
     "drill-pow": "merge",
-    "drill-mod": "merge"
+    "drill-mod": "design"
   },
   "takeoverNarrowed": {
     "drill-div": {
@@ -16,6 +16,13 @@
       "source": "autopilot",
       "reason": "降级 #9：main 上撤回了 autopilot 自动合并的 PR",
       "at": "2026-11-22T03:28:00Z"
+    },
+    "drill-mod": {
+      "from": "merge",
+      "to": "design",
+      "source": "autopilot",
+      "reason": "降级 #30：autopilot 合并后 main 的主 CI 变红",
+      "at": "2026-11-27T11:05:06Z"
     }
   }
 }
