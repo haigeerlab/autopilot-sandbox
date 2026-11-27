@@ -11,9 +11,13 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+      # 检查点 5 R15 演练：PR 上多等 4 分钟，让 hub run 打开自动合并时 CI 仍在跑。演练结束后删掉。
+      - name: 等待（仅 PR）
+        if: github.event_name == 'pull_request'
+        run: sleep 240
       - run: python3 -B -m unittest discover -s tests -v
