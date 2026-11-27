@@ -6,4 +6,8 @@
   - 验证：回归用例 R1、R2
   - 文件：`src/calc.py`、`tests/test_calc.py`
 
+- [x] Task 3：`MainRedDrillTest`（R15 ② 演练，演练后撤回）
+  - 验证：回归用例 R1、R2
+  - 文件：`tests/test_calc.py`
+
 - [ ] Checkpoint 1（gate）：合并前验证通过后自动合并
