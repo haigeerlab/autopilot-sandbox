@@ -1,6 +1,6 @@
 # 需求：drill-mod
 
-<!-- spec-guard: review approved a4bd15a93fc0 -->
+<!-- spec-guard: review approved d50a1c119cf2 -->
 
 <!-- spec-guard: flow v2 tier=small -->
 
@@ -55,6 +55,12 @@
 - 执行方式：command
 - 命令：`python3 -B -m unittest discover -s tests -v`
 - 证据：运行输出
+
+| 成功标准 | 用例 |
+|---|---|
+| S1 | R1 |
+| S2 | R1 |
+| S3 | R2 |
 
 ## 变更记录
 
