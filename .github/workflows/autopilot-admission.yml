@@ -18,6 +18,6 @@ jobs:
       pull-requests: write
       issues: write
     # Template only: replace both <HUB_SHA> placeholders with the same 40-char commit SHA.
-    uses: haigeerlab/autopilot-hub/.github/workflows/admission.yml@d1e0f2a582d016b0f6bc1c25e9c42fbde954e0aa
+    uses: haigeerlab/autopilot-hub/.github/workflows/admission.yml@cfe2f1d134a1c58490679dad1d5294f5db789c90
     with:
-      hub_ref: d1e0f2a582d016b0f6bc1c25e9c42fbde954e0aa
+      hub_ref: cfe2f1d134a1c58490679dad1d5294f5db789c90
