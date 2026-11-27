@@ -3,6 +3,7 @@
 ## 任务
 
 - Task 1：在 `src/calc.py` 加 `mod(a, b)`，在 `tests/test_calc.py` 加 `ModTest`。验证：回归用例 R1、R2 的命令都通过。
+- Task 2：在 `tests/test_calc.py` 的 `ModTest` 补负数被除数的测试（`mod(-7, 3) == 2`，与 Python `%` 一致）。验证：回归用例 R1、R2 的命令都通过。
 
 ## 检查点
 

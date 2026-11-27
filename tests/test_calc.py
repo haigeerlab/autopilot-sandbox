@@ -36,6 +36,7 @@ class ModTest(unittest.TestCase):
     def test_mod(self):
         self.assertEqual(calc.mod(7, 3), 1)
         self.assertEqual(calc.mod(9, 3), 0)
+        self.assertEqual(calc.mod(-7, 3), 2)
 
     def test_zero_divisor(self):
         with self.assertRaises(ValueError):
