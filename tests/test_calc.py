@@ -42,5 +42,14 @@ class ModTest(unittest.TestCase):
             calc.mod(7, 0)
 
 
+
+class MainRedDrillTest(unittest.TestCase):
+    """hub-auto-merge checkpoint 5 R15 step 2: fail only on GitHub push events so main CI turns red."""
+
+    def test_fails_only_on_push(self):
+        if os.environ.get("GITHUB_EVENT_NAME") == "push":
+            self.fail("检查点 5 R15 ② 演练：故意让主干 push CI 失败")
+
+
 if __name__ == "__main__":
     unittest.main()
