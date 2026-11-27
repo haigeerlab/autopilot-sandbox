@@ -20,3 +20,9 @@ def power(a, n):
     for _ in range(n):
         result *= a
     return result
+
+
+def mod(a, b):
+    if b == 0:
+        raise ValueError("除数 b 不能为 0")
+    return a % b
